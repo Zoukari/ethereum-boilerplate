@@ -52,7 +52,9 @@ const App = ({ isServerInfo }) => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
 
-    const {inputValue, setInputValue} = useState("0x9Edf9B08406fa69A9dd5F73269F8A927b4F772d7");
+  const { inputValue, setInputValue } = useState(
+    "0x9Edf9B08406fa69A9dd5F73269F8A927b4F772d7",
+  );
 
   useEffect(() => {
     const connectorId = window.localStorage.getItem("connectorId");
@@ -80,7 +82,7 @@ const App = ({ isServerInfo }) => {
               <NFTBalance />
             </Route>
             <Route path="/nftMarket">
-              <NFTTokenIds inputValue=(inputValue) />
+              <NFTTokenIds inputValue={inputValue} />
             </Route>
             <Route path="/transactions">
               <NFTBalance />

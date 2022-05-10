@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { useMoralis, useNFTTokenIds } from "react-moralis";
 import { Card, Image, Tooltip, Modal, Input, Skeleton } from "antd";
 import {
@@ -25,7 +25,7 @@ const styles = {
   },
 };
 
-function NFTTokenIds({inputValue}) {
+function NFTTokenIds({ inputValue }) {
   const { data: NFTTokenIds } = useNFTTokenIds(inputValue);
   const { Moralis, chainId } = useMoralis();
   const [visible, setVisibility] = useState(false);
@@ -100,7 +100,9 @@ function NFTTokenIds({inputValue}) {
                     </Tooltip>,
                     <Tooltip title="Mettre en vente">
                       <ShoppingCartOutlined
-                        onClick={() => alert("Add Marketplace Smartcontract Inntegration")}
+                        onClick={() =>
+                          alert("Add Marketplace Smartcontract Inntegration")
+                        }
                       />
                     </Tooltip>,
                   ]}

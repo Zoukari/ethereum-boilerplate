@@ -100,7 +100,9 @@ function NFTBalance() {
                     </Tooltip>,
                     <Tooltip title="Mettre en vente">
                       <ShoppingCartOutlined
-                        onClick={() => alert("Add Marketplace Smartcontract Inntegration")}
+                        onClick={() =>
+                          alert("Add Marketplace Smartcontract Inntegration")
+                        }
                       />
                     </Tooltip>,
                   ]}
